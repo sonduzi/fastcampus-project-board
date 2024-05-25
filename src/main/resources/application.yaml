@@ -13,6 +13,9 @@ logging:
 
 spring:
   datasource:
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    driver-class-name: org.h2.Driver
     url: jdbc:mysql://localhost:3306/board
     username: duzi
     password: qa7724fg@@A
@@ -29,7 +32,7 @@ spring:
         default_batch_fetch_size: 100
   h2:
     console:
-      enabled: true
+      enabled: false
   sql:
     init:
       mode: always
